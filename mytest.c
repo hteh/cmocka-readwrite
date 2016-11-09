@@ -29,30 +29,11 @@ else if ( m == size && n != size){
               	data = "error3";
         }
 else if (m==size && n == size){
-        	printf("success.return:%d,%d. size:%d\n", n,m, size);
+        	printf("success.return:%d,%d. size:%d\n", n,m, (int)strlen(data));
 		data= "success";
 }
     return data;
      
 }
 
-/*
-const char* erromsg(char* error, int size)
-{
 
-    if (write(1, error, size) != size) 
-        
-    return write(2, "There was an error writing to standard out\n", 44);
-      
-    switch (error) {
-    case 0:
-        return "Success";
-    case -1:
-        return "write is not working";
-    case -2:
-        return "Not enough buffer";
-    }
-
-    return "Unknown error!";   
-
-}*/
